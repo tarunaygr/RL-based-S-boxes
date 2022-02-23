@@ -1,0 +1,671 @@
+Rule 10280 - ANF: f(x1,x2,x3,x4) = x1x2 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 33410 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 58596 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 20046 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 55512 - ANF: f(x1,x2,x3,x4) = x1x2 + x3 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 29298 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x3 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 5140 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x3 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 48830 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x3 + x1x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 55080 - ANF: f(x1,x2,x3,x4) = x1x2 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 32130 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 7140 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 45390 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 10200 - ANF: f(x1,x2,x3,x4) = x1x2 + x3 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 36210 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x3 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 60180 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x3 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 16830 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x3 + x1x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 24672 - ANF: f(x1,x2,x3,x4) = x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 51914 - ANF: f(x1,x2,x3,x4) = x1 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 44204 - ANF: f(x1,x2,x3,x4) = x2 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 1542 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 37008 - ANF: f(x1,x2,x3,x4) = x3 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 14906 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 23644 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 63222 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x1x3 + x2x3 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 40800 - ANF: f(x1,x2,x3,x4) = x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 13770 - ANF: f(x1,x2,x3,x4) = x1 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 21420 - ANF: f(x1,x2,x3,x4) = x2 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 63750 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 28560 - ANF: f(x1,x2,x3,x4) = x3 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 50490 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 41820 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 2550 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x1x3 + x2x3 + x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 3264 - ANF: f(x1,x2,x3,x4) = x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 42602 - ANF: f(x1,x2,x3,x4) = x1 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 49164 - ANF: f(x1,x2,x3,x4) = x2 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 27302 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 64560 - ANF: f(x1,x2,x3,x4) = x3 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 22170 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 12540 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 39510 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x2x3 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 62400 - ANF: f(x1,x2,x3,x4) = x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 22890 - ANF: f(x1,x2,x3,x4) = x1 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 16140 - ANF: f(x1,x2,x3,x4) = x2 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 38310 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 816 - ANF: f(x1,x2,x3,x4) = x3 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 43418 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 53244 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 25942 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x2x3 + x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 61064 - ANF: f(x1,x2,x3,x4) = x1x2 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 17442 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 8772 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 35054 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 7800 - ANF: f(x1,x2,x3,x4) = x1x2 + x3 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 46290 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x3 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 53940 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x3 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 30750 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x3 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 4488 - ANF: f(x1,x2,x3,x4) = x1x2 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 47906 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 56644 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 30702 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 57720 - ANF: f(x1,x2,x3,x4) = x1x2 + x3 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 19410 - ANF: f(x1,x2,x3,x4) = x1 + x1x2 + x3 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 11700 - ANF: f(x1,x2,x3,x4) = x2 + x1x2 + x3 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 34590 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x2 + x3 + x4 + x1x4 + x2x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 64160 - ANF: f(x1,x2,x3,x4) = x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 20490 - ANF: f(x1,x2,x3,x4) = x1 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 13932 - ANF: f(x1,x2,x3,x4) = x2 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 40134 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 2640 - ANF: f(x1,x2,x3,x4) = x3 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 41210 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 50844 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 27702 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x1x3 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 1440 - ANF: f(x1,x2,x3,x4) = x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 44810 - ANF: f(x1,x2,x3,x4) = x1 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 51564 - ANF: f(x1,x2,x3,x4) = x2 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 25542 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 62800 - ANF: f(x1,x2,x3,x4) = x3 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 24570 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 14748 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 37686 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x1x3 + x4 + x1x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 15360 - ANF: f(x1,x2,x3,x4) = x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 38570 - ANF: f(x1,x2,x3,x4) = x1 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 61644 - ANF: f(x1,x2,x3,x4) = x2 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 23142 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 52464 - ANF: f(x1,x2,x3,x4) = x3 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 26202 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 60 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 43670 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 49920 - ANF: f(x1,x2,x3,x4) = x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 27050 - ANF: f(x1,x2,x3,x4) = x1 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 4044 - ANF: f(x1,x2,x3,x4) = x2 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 42342 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 13296 - ANF: f(x1,x2,x3,x4) = x3 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: false BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 39258 - ANF: f(x1,x2,x3,x4) = x1 + x3 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112
+--
+Rule 65340 - ANF: f(x1,x2,x3,x4) = x2 + x3 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: false BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: false BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: false BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: false BENT: false -- PLAT: true -- NL: 112
+--
+Rule 21910 - ANF: f(x1,x2,x3,x4) = x1 + x2 + x3 + x4 + x2x4 + x3x4 Nonlinearity: 4
+Size 4 X 1:  BAL: true BENT: false -- PLAT: true -- NL: 4
+Size 5 X 2:  BAL: true BENT: false -- PLAT: true -- NL: 12
+Size 6 X 3:  BAL: true BENT: false -- PLAT: true -- NL: 24
+Size 7 X 4:  BAL: true BENT: false -- PLAT: true -- NL: 56
+Size 8 X 5:  BAL: true BENT: false -- PLAT: true -- NL: 112

@@ -1,0 +1,5 @@
+NOTES ON EXPERIMENTAL DATA
+
+- The directory "enumeration_quadratic_rules" includes the results of the combinatorial enumeration of the Search-ANF algorithm described in the paper. For each number of variables 3 <= x <= 6 considered, the file "quadratic_rules_dx_n20_semibent_nbca.txt" contains the list of quadratic rules of x variables over which the CA construction works up to 20 cells, and reports for each length n of the CA the nonlinearity of the corresponding semi-bent function. The particular case of x=4 variables shows that there are only rules for which the construction works only up to 8 cells.
+
+- The directory "filtered_balanced_linear_structures" contains the list of balanced rules of 3, 5 and 6 variables filtered from the files in the directory "enumeration_quadratic_rules". For each balanced rule, it is reported in a single line the number of linear structures of the resulting semi-bent functions up to 20 variables.
