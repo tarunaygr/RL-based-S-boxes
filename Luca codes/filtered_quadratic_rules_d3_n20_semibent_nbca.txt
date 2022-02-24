@@ -1,0 +1,8 @@
+Rule 120 - ANF: f(x1,x2,x3) = x1x2 + x3 Nonlinearity: 2
+Rule 210 - ANF: f(x1,x2,x3) = x1 + x1x2 + x3 Nonlinearity: 2
+Rule 180 - ANF: f(x1,x2,x3) = x2 + x1x2 + x3 Nonlinearity: 2
+Rule 30 - ANF: f(x1,x2,x3) = x1 + x2 + x1x2 + x3 Nonlinearity: 2
+Rule 106 - ANF: f(x1,x2,x3) = x1 + x2x3 Nonlinearity: 2
+Rule 166 - ANF: f(x1,x2,x3) = x1 + x2 + x2x3 Nonlinearity: 2
+Rule 154 - ANF: f(x1,x2,x3) = x1 + x3 + x2x3 Nonlinearity: 2
+Rule 86 - ANF: f(x1,x2,x3) = x1 + x2 + x3 + x2x3 Nonlinearity: 2

@@ -1,10 +1,10 @@
 import sys
-
-with open('outputs_m_6.txt','r') as fin:
+file=sys.argv[1]
+with open(file,'r') as fin:
     
     lines=fin.readlines()
 
-with open('funcs_m6.py','w') as fout:
+with open('funcs_'+file+'.py','w') as fout:
     fout.write('rules=[]\n')
     fout.write('names=[]\n')
     for line in lines:

@@ -2,7 +2,7 @@ import os
 
 for filename in os.listdir('experiments/enumeration_quadratic_rules'):
 
-    with open('experiments/enumeration_quadratic_rules'+filename, 'r') as fin, \
+    with open('experiments/enumeration_quadratic_rules/'+filename, 'r') as fin, \
             open('filtered_'+filename, 'w') as fout:
         
         lines = fin.readlines()
