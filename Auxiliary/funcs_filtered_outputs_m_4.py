@@ -280,3 +280,6 @@ def rule_126(ip):
 
 rules.append(rule_126)
 names.append("rule_126")
+
+def return_rules():
+    return rules,names
