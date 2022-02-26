@@ -72,7 +72,7 @@ for bit_list in outputs:
   decimal_repr.append(BinaryTodecimal(bit_list))
 
 figure(figsize=(10,6))
-plt.hist(decimal_repr,bins=256);
+plt.hist(decimal_repr,bins=256)
 
 # Function to check the bijectivity of the s-box function. Returns 1 if bijective, 0 if not
 # Parameters:
@@ -163,3 +163,18 @@ def NLcalc(inarray,outarray,n):
   # print(f'wht={wht}')
   NL = pow(2,n-1) - wht/2
   return NL
+
+def state_crypto_strength(rules):
+    inarray,outarray = Sbox(rules)
+    NL = NLcalc(inarray,outarray,8)
+    DU = diff_uniformity(BinaryTodecimal(outarray))
+    normalised_NL = (NL/112)*100
+    DU1 = ((DU-4)/(128-4))*100
+    normalised_DU = 100 - DU1
+    reward = (normalised_NL + normalised_DU)/2
+    
+    return reward
+  
+
+def state_transition_reward(rule1, rule2):
+  return state_crypto_strength(rule2) - state_crypto_strength(rule1)
