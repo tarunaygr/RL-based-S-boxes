@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 import sys
 import itertools
 from matplotlib.pyplot import figure
-import Auxiliary.funcs_filtered_outputs_m_3 as m3
-import Auxiliary.funcs_filtered_outputs_m_4 as m4
-import Auxiliary.funcs_filtered_outputs_m_5 as m5
-import Auxiliary.funcs_filtered_outputs_m_6 as m6
+from . import funcs_filtered_outputs_m_3 as m3
+# import Auxiliary.funcs_filtered_outputs_m_4 as m4
+# import Auxiliary.funcs_filtered_outputs_m_5 as m5
+# import Auxiliary.funcs_filtered_outputs_m_6 as m6
 
 #Helper Functions
 
@@ -32,8 +32,11 @@ def BinaryTodecimal(bit_list):
 # Output bit after running the rule and XORing the results
 def rule_op(rule,nb_size,ca_len,ca):
   ops=[]
-  for i in range(0,ca_len,nb_size):
-    ops.append(rule(ca[i:i+nb_size+1]))
+  for i in range(len(ca)-nb_size+1):
+    nbr=[]
+    for j in range(nb_size):
+      nbr.append(ca[i+j])
+  ops.append(rule(nbr))
   res=0
   for op in ops:
     res^=op
@@ -164,17 +167,33 @@ def NLcalc(inarray,outarray,n):
   NL = pow(2,n-1) - wht/2
   return NL
 
+# Function to calculate the cryptographic strength of an s-box.
+# Parameters:
+# rules -  the set of rules to run the sbox
+# Returns:
+# The strength of the s-box according to our formulation
 def state_crypto_strength(rules):
-    inarray,outarray = Sbox(rules)
-    NL = NLcalc(inarray,outarray,8)
-    DU = diff_uniformity(BinaryTodecimal(outarray))
-    normalised_NL = (NL/112)*100
-    DU1 = ((DU-4)/(128-4))*100
-    normalised_DU = 100 - DU1
-    reward = (normalised_NL + normalised_DU)/2
-    
-    return reward
+  inarray,outarray = Sbox(rules)
   
-
+  decimal_repr=[]
+  for bit_list in outarray:
+    decimal_repr.append(BinaryTodecimal(bit_list))
+  DU = diff_uniformity(decimal_repr)
+  # print('here')
+  # NL = NLcalc(inarray,outarray,8)
+  print(f"DU = {str(DU)}")
+  # normalised_NL = (NL/112)*100
+  DU1 = ((DU-4)/(128-4))*100
+  normalised_DU = 100 - DU1
+  reward = (0 + normalised_DU)/2
+  
+  return reward
+  
+# Function to calculate the immediate reward for a particular state transition.
+# Parameters:
+# rule1 - the initial state of the s-box
+# rule2 - the final state of the s-box
+# Returns:
+# The immediate reward achieved by the transition
 def state_transition_reward(rule1, rule2):
   return state_crypto_strength(rule2) - state_crypto_strength(rule1)
