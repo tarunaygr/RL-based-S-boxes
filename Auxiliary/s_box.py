@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import itertools
-from matplotlib.pyplot import figure
 from . import funcs_filtered_outputs_m_3 as m3
 # import Auxiliary.funcs_filtered_outputs_m_4 as m4
 # import Auxiliary.funcs_filtered_outputs_m_5 as m5
@@ -44,7 +43,7 @@ def rule_op(rule,nb_size,ca_len,ca):
 
 #CA Rules Definitions which we run on the Cellular Automata. These are rules of neighbourhood size 3
 rule_list,rule_names= m3.return_rules()
-rules=[m3.rule_178,m3.rule_92,m3.rule_154,m3.rule_18,m3.rule_68,m3.rule_172,m3.rule_222,m3.rule_46]
+# rules=[m3.rule_178,m3.rule_92,m3.rule_154,m3.rule_18,m3.rule_68,m3.rule_172,m3.rule_222,m3.rule_46]
 # rules=rule_list[:8]
 
 # Function to emulate the output of the S-box. It outputs the inputs and corresponding outputs in a bit list form.
@@ -59,7 +58,7 @@ def Sbox(rules):
   outputs=[]
   for i in range(256):
     res = list(map(int, str(decimalToBinary(i))))
-    
+ 
     inputs.append(res[1:])
     op=[]
     for rule in rules:
@@ -67,15 +66,6 @@ def Sbox(rules):
     outputs.append(op)
     # print(f'{res[1:]} ->{op}')
   return inputs,outputs
-
-inputs,outputs=Sbox(rules)
-# We convert the bit list of outputs into decimal values
-decimal_repr=[]
-for bit_list in outputs:
-  decimal_repr.append(BinaryTodecimal(bit_list))
-
-figure(figsize=(10,6))
-plt.hist(decimal_repr,bins=256)
 
 # Function to check the bijectivity of the s-box function. Returns 1 if bijective, 0 if not
 # Parameters:
@@ -92,7 +82,6 @@ def bijectivity(decimal_repr):
     print("Not Bijective")
     return 0
 
-bijectivity(decimal_repr)
 
 # Function to Calculate the Difference Distribution Table of the S-box function and returns its differential uniformity
 # Parameters:
@@ -115,6 +104,8 @@ def diff_uniformity(decimal_repr):
 
 def innerprod(a,x):
   res=0
+  if (len(x)!=len(a)):
+    print(f"SIZE a={len(a)} SIZE x={len(x)}")
   for i in range(len(a)):
     res^=((a[i]*x[i])%2)
   return res
@@ -129,7 +120,9 @@ def innerprod(a,x):
 def WHT_Calc(u,v,inarray,outarray):
   WHT=0
   for i in range(len(inarray)):
-    WHT+=pow(-1,innerprod(v,outarray[i])^innerprod(u,inarray[i]))
+    x=innerprod(v,outarray[i])
+    y=innerprod(u,inarray[i])
+    WHT+=pow(-1,x^y)
   # print(f'u={u} v={v} WHT={WHT}')
   return WHT
 
@@ -140,6 +133,24 @@ def WHT_Calc(u,v,inarray,outarray):
 # Returns:
 # the maximum value of WHT
 
+def get_WHT_spectrum(inarray,outarray):
+  
+  input_binaries=[]
+  for i in range(256):
+    input_binaries.append(list(map(int, str(decimalToBinary(i)))))
+  v_vals = input_binaries.copy()[1:]
+  u_vals = input_binaries.copy()
+  # v_vals=v_vals[1:]
+  # u_vals=u_vals[1:]
+  max=-inf
+  for u in u_vals:
+    for v in v_vals:
+      WHT_curr=abs(WHT_Calc(u,v,inarray,outarray))
+      if (WHT_curr>max):
+        # print(f'U={u} V={v} WHY ={WHT_curr}')
+        max=WHT_curr
+  return max
+      
 def get_WHT_spectrum(inarray,outarray):
   v_vals = list(itertools.product([0, 1], repeat=8))
   u_vals = list(itertools.product([0, 1], repeat=8))
@@ -172,20 +183,29 @@ def NLcalc(inarray,outarray,n):
 # rules -  the set of rules to run the sbox
 # Returns:
 # The strength of the s-box according to our formulation
-def state_crypto_strength(rules):
+def state_crypto_strength(rules_index):
+  print("Current State Checking Strength")
+  print(rules_index)
+  rules=[ rule_list[i]  for i in rules_index]
   inarray,outarray = Sbox(rules)
-  
+  print("INARRAY")
+  for i in inarray:
+    if(len(i)!=8):
+      print(i)
+  print("OUTARRAY")
+  for i in outarray:
+    if(len(i)!=8):
+      print(i)
   decimal_repr=[]
   for bit_list in outarray:
     decimal_repr.append(BinaryTodecimal(bit_list))
   DU = diff_uniformity(decimal_repr)
-  # print('here')
-  # NL = NLcalc(inarray,outarray,8)
-  print(f"DU = {str(DU)}")
-  # normalised_NL = (NL/112)*100
+  NL = NLcalc(inarray,outarray,8)
+  print(f"DU = {str(DU)} NL={str(NL)}")
+  normalised_NL = (NL/112)*100
   DU1 = ((DU-4)/(128-4))*100
   normalised_DU = 100 - DU1
-  reward = (0 + normalised_DU)/2
+  reward = (normalised_NL + normalised_DU)/2
   
   return reward
   

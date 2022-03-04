@@ -1,4 +1,3 @@
-import funcs_m3
 import numpy as np
 
 rules,names=funcs_m3.return_rules()
