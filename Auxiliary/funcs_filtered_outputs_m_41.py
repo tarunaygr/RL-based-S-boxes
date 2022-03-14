@@ -5040,3 +5040,6 @@ def rule_6014(ip):
 
 rules.append(rule_6014)
 names.append("rule_6014")
+
+def return_rules():
+    return rules,names

@@ -29,14 +29,31 @@ def BinaryTodecimal(bit_list):
 # ca  - The input CA configuration to run the rules on
 # Returns:
 # Output bit after running the rule and XORing the results
-def rule_op(rule,nb_size,ca_len,ca):
+# def rule_op(rule,nb_size,ca_len,ca):
+#   ops=[]
+#   for i in range(len(ca)-nb_size+1):
+#     nbr=[]
+#     for j in range(nb_size):
+#       nbr.append(ca[i+j])
+#   ops.append(rule(nbr))
+#   res=0
+#   for op in ops:
+#     res^=op
+#   return res
+
+
+def rule_op(rule,nb_size,ca_len,ca,start):
   ops=[]
-  for i in range(len(ca)-nb_size+1):
+  for i in range(start,start+ca_len-nb_size+1):
     nbr=[]
     for j in range(nb_size):
-      nbr.append(ca[i+j])
-  ops.append(rule(nbr))
-  res=0
+      #print("i: ",i,"j: ",j)  
+      nbr.append(ca[(i+j)%ca_len])
+    #print("input: ",ca)
+    #print("neighbour: ",nbr)
+    #print("output = ", rule(nbr))
+    ops.append(rule(nbr))
+    res=0
   for op in ops:
     res^=op
   return res
@@ -53,19 +70,42 @@ rule_list,rule_names= m3.return_rules()
 # inputs - All possible inputs tried in the s-box
 # outputs - Outputs for the correspoding values of input
 
-def Sbox(rules):
-  inputs=[]
-  outputs=[]
-  for i in range(256):
-    res = list(map(int, str(decimalToBinary(i))))
+# def Sbox(rules):
+#   inputs=[]
+#   outputs=[]
+#   for i in range(256):
+#     res = list(map(int, str(decimalToBinary(i))))
  
-    inputs.append(res[1:])
-    op=[]
-    for rule in rules:
-      op.append(rule_op(rule,3,8,res))
-    outputs.append(op)
-    # print(f'{res[1:]} ->{op}')
-  return inputs,outputs
+#     inputs.append(res[1:])
+#     op=[]
+#     for rule in rules:
+#       op.append(rule_op(rule,3,8,res))
+#     outputs.append(op)
+#     # print(f'{res[1:]} ->{op}')
+#   return inputs,outputs
+
+
+def Sbox(rules):
+    inputs=[]
+    outputs=[]
+    
+    for i in range(256):
+        #print("--------------------------------new ip------------------------------")
+        res = list(map(int, str(decimalToBinary(i))))
+        res = res[1:]
+        inputs.append(res)
+        op=[]
+        start = 0
+        for rule in rules:
+            #print("-------------new rule---------------")
+            for i in range(4):
+                
+                op.append(rule_op(rule,3,8,res,start))
+                #print("one bit added for start", start)
+                start +=1
+        outputs.append(op)
+    return inputs,outputs
+
 
 # Function to check the bijectivity of the s-box function. Returns 1 if bijective, 0 if not
 # Parameters:
