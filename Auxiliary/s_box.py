@@ -3,9 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import itertools
+import math
 from . import funcs_filtered_outputs_m_3 as m3
 
-NUM_RULES=2
+NUM_RULES=3
 INPUT_SIZE=8
 OUTPUT_SIZE=8
 
@@ -103,11 +104,12 @@ def Sbox(rules):
         start = 0
         for rule in rules:
             #print("-------------new rule---------------")
-            for i in range(INPUT_SIZE//NUM_RULES):
+            for i in range(math.ceil(INPUT_SIZE/NUM_RULES)):
                 
                 op.append(rule_op(rule,3,INPUT_SIZE,res,start))
                 #print("one bit added for start", start)
                 start +=1
+        op = op[0:8]
         outputs.append(op)
     return inputs,outputs
 
@@ -134,9 +136,9 @@ def bijectivity(decimal_repr):
 # Returns:
 # The maximum value in the DDT ( the differential uniformity of the s-box)
 def diff_uniformity(decimal_repr):
-  ddt=np.zeros((2**INPUT_SIZE,2**INPUT_SIZE))
-  for a in range(2**INPUT_SIZE):
-    for x in range(2**INPUT_SIZE):
+  ddt=np.zeros((256,256))
+  for a in range(256):
+    for x in range(256):
       sum=x^a
       F1=decimal_repr[sum]
       F2=decimal_repr[x]
@@ -241,6 +243,8 @@ def state_crypto_strength(rules_index):
   # for i in outarray:
   #   if(len(i)!=8):
   #     print(i)
+  print(len(outarray[1]))
+  print("Hello")
   decimal_repr=[]
   for bit_list in outarray:
     decimal_repr.append(BinaryTodecimal(bit_list))
