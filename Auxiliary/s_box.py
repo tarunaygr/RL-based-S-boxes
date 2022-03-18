@@ -4,6 +4,11 @@ import matplotlib.pyplot as plt
 import sys
 import itertools
 from . import funcs_filtered_outputs_m_3 as m3
+
+NUM_RULES=2
+INPUT_SIZE=8
+OUTPUT_SIZE=8
+
 # import Auxiliary.funcs_filtered_outputs_m_4 as m4
 # import Auxiliary.funcs_filtered_outputs_m_5 as m5
 # import Auxiliary.funcs_filtered_outputs_m_6 as m6
@@ -89,7 +94,7 @@ def Sbox(rules):
     inputs=[]
     outputs=[]
     
-    for i in range(256):
+    for i in range(2**INPUT_SIZE):
         #print("--------------------------------new ip------------------------------")
         res = list(map(int, str(decimalToBinary(i))))
         res = res[1:]
@@ -98,9 +103,9 @@ def Sbox(rules):
         start = 0
         for rule in rules:
             #print("-------------new rule---------------")
-            for i in range(4):
+            for i in range(INPUT_SIZE//NUM_RULES):
                 
-                op.append(rule_op(rule,3,8,res,start))
+                op.append(rule_op(rule,3,INPUT_SIZE,res,start))
                 #print("one bit added for start", start)
                 start +=1
         outputs.append(op)
@@ -129,17 +134,17 @@ def bijectivity(decimal_repr):
 # Returns:
 # The maximum value in the DDT ( the differential uniformity of the s-box)
 def diff_uniformity(decimal_repr):
-  ddt=np.zeros((256,256))
-  for a in range(256):
-    for x in range(256):
+  ddt=np.zeros((2**INPUT_SIZE,2**INPUT_SIZE))
+  for a in range(2**INPUT_SIZE):
+    for x in range(2**INPUT_SIZE):
       sum=x^a
       F1=decimal_repr[sum]
       F2=decimal_repr[x]
       b=F1^F2
       ddt[a][b]+=1
-  for i in range(256):
+  for i in range(2**INPUT_SIZE):
     ddt[i][i]=0
-  ddt[0]=np.zeros(256)
+  ddt[0]=np.zeros(2**INPUT_SIZE)
   return (np.amax(ddt))
 
 def innerprod(a,x):
@@ -173,27 +178,27 @@ def WHT_Calc(u,v,inarray,outarray):
 # Returns:
 # the maximum value of WHT
 
-def get_WHT_spectrum(inarray,outarray):
+# def get_WHT_spectrum(inarray,outarray):
   
-  input_binaries=[]
-  for i in range(256):
-    input_binaries.append(list(map(int, str(decimalToBinary(i)))))
-  v_vals = input_binaries.copy()[1:]
-  u_vals = input_binaries.copy()
-  # v_vals=v_vals[1:]
-  # u_vals=u_vals[1:]
-  max=-inf
-  for u in u_vals:
-    for v in v_vals:
-      WHT_curr=abs(WHT_Calc(u,v,inarray,outarray))
-      if (WHT_curr>max):
-        # print(f'U={u} V={v} WHY ={WHT_curr}')
-        max=WHT_curr
-  return max
+#   input_binaries=[]
+#   for i in range(256):
+#     input_binaries.append(list(map(int, str(decimalToBinary(i)))))
+#   v_vals = input_binaries.copy()[1:]
+#   u_vals = input_binaries.copy()
+#   # v_vals=v_vals[1:]
+#   # u_vals=u_vals[1:]
+#   max=-inf
+#   for u in u_vals:
+#     for v in v_vals:
+#       WHT_curr=abs(WHT_Calc(u,v,inarray,outarray))
+#       if (WHT_curr>max):
+#         # print(f'U={u} V={v} WHY ={WHT_curr}')
+#         max=WHT_curr
+#   return max
       
 def get_WHT_spectrum(inarray,outarray):
-  v_vals = list(itertools.product([0, 1], repeat=8))
-  u_vals = list(itertools.product([0, 1], repeat=8))
+  v_vals = list(itertools.product([0, 1], repeat=OUTPUT_SIZE))
+  u_vals = list(itertools.product([0, 1], repeat=INPUT_SIZE))
   v_vals=v_vals[1:]
   # u_vals=u_vals[1:]
   max=-inf
@@ -224,23 +229,23 @@ def NLcalc(inarray,outarray,n):
 # Returns:
 # The strength of the s-box according to our formulation
 def state_crypto_strength(rules_index):
-  print("Current State Checking Strength")
-  print(rules_index)
+  # print("Current State Checking Strength")
+  # print(rules_index)
   rules=[ rule_list[i]  for i in rules_index]
   inarray,outarray = Sbox(rules)
-  print("INARRAY")
-  for i in inarray:
-    if(len(i)!=8):
-      print(i)
-  print("OUTARRAY")
-  for i in outarray:
-    if(len(i)!=8):
-      print(i)
+  # print("INARRAY")
+  # for i in inarray:
+  #   if(len(i)!=8):
+  #     print(i)
+  # print("OUTARRAY")
+  # for i in outarray:
+  #   if(len(i)!=8):
+  #     print(i)
   decimal_repr=[]
   for bit_list in outarray:
     decimal_repr.append(BinaryTodecimal(bit_list))
   DU = diff_uniformity(decimal_repr)
-  NL = NLcalc(inarray,outarray,8)
+  NL = NLcalc(inarray,outarray,INPUT_SIZE)
   print(f"DU = {str(DU)} NL={str(NL)}")
   normalised_NL = (NL/112)*100
   DU1 = ((DU-4)/(128-4))*100
