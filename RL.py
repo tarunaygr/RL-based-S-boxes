@@ -11,7 +11,7 @@ import os
 from random import random, randint, choice
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-NUM_RULES = 3
+NUM_RULES = 2
 INPUT_SIZE = 8
 OUTPUT_SIZE = 8
 
@@ -30,16 +30,28 @@ def convert_8(state):
 
 
 rules_list, rule_names = m3.return_rules()
-try:
-    model=keras.models.load_model('ann')
-    print('Importing Model..')
-except:
-    model = Sequential()
-    model.add(Dense(56*NUM_RULES, input_shape=(56*NUM_RULES,),
-            batch_size=1, name='inputlayer'))
-    model.add(Dense(56, activation='relu', name='hiddenlayer'))
-    model.add(Dense(1, activation='relu', name='outputlayer'))
-    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
+if NUM_RULES==3:
+    try:
+        model=keras.models.load_model('ann3')
+        print('Importing Model..')
+    except:
+        model = Sequential()
+        model.add(Dense(56*NUM_RULES, input_shape=(56*NUM_RULES,),
+                batch_size=1, name='inputlayer'))
+        model.add(Dense(56, activation='relu', name='hiddenlayer'))
+        model.add(Dense(1, activation='relu', name='outputlayer'))
+        model.compile(loss='mse', optimizer='adam', metrics=['mae'])
+elif NUM_RULES==2:
+    try:
+        model=keras.models.load_model('ann2')
+        print('Importing Model..')
+    except:
+        model = Sequential()
+        model.add(Dense(56*NUM_RULES, input_shape=(56*NUM_RULES,),
+                batch_size=1, name='inputlayer'))
+        model.add(Dense(56, activation='relu', name='hiddenlayer'))
+        model.add(Dense(1, activation='relu', name='outputlayer'))
+        model.compile(loss='mse', optimizer='adam', metrics=['mae'])
 
 # model.summary()
 average_reward = 0
@@ -53,7 +65,7 @@ best_NL = -inf
 best_states = []
 visited_states = []
 # rules=[m3.rule_178,m3.rule_92,m3.rule_154,m3.rule_18,m3.rule_68,m3.rule_172,m3.rule_222,m3.rule_46]
-S = [29, 53, 23]
+S = [29, 53]
 A_val = randint(0, 55)
 # while(A_val in S):
 #     A_val=randint(0,55)
@@ -75,7 +87,7 @@ try:
             best_DU = DU
             best_NL = NL
             best_states = [[rule_names[s] for s in S_prime]]
-        elif (R == best_strength):
+        elif (R == best_strength and ([rule_names[s] for s in S_prime] not in best_states)):
             best_states.append([rule_names[s] for s in S_prime])
         epsilon = random()
         if epsilon < epsilon_threshold:
@@ -122,7 +134,10 @@ try:
         S = S_prime
         A = A_prime
 except KeyboardInterrupt:
-    model.save('ann')
+    if NUM_RULES==2:
+        model.save('ann2')
+    elif NUM_RULES==3:
+        model.save('ann3')
     print("Exiting the RL...\n")
     print("FINAL REPORT:")
     print(f'Number of States Visited: {len(visited_states)}')

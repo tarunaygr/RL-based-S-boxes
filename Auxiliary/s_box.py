@@ -6,7 +6,7 @@ import itertools
 import math
 from . import funcs_filtered_outputs_m_3 as m3
 
-NUM_RULES = 3
+NUM_RULES = 2
 INPUT_SIZE = 8
 OUTPUT_SIZE = 8
 
@@ -102,9 +102,9 @@ def bijectivity(decimal_repr):
 # Returns:
 # The maximum value in the DDT ( the differential uniformity of the s-box)
 def diff_uniformity(decimal_repr):
-    ddt = np.zeros((256, 256))
-    for a in range(256):
-        for x in range(256):
+    ddt = np.zeros((2**INPUT_SIZE, 2**INPUT_SIZE))
+    for a in range(2**INPUT_SIZE):
+        for x in range(2**INPUT_SIZE):
             sum = x ^ a
             F1 = decimal_repr[sum]
             F2 = decimal_repr[x]
