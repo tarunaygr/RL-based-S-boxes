@@ -44,7 +44,7 @@ def rule_op(rule, nb_size, ca_len, ca, start):
         for j in range(nb_size):
             nbr.append(ca[(i+j) % ca_len])
         ops.append(rule(nbr))
-        res = 0
+    res = 0
     for op in ops:
         res ^= op
     return res

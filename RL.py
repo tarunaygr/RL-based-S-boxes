@@ -30,13 +30,17 @@ def convert_8(state):
 
 
 rules_list, rule_names = m3.return_rules()
+try:
+    model=keras.models.load_model('ann')
+    print('Importing Model..')
+except:
+    model = Sequential()
+    model.add(Dense(56*NUM_RULES, input_shape=(56*NUM_RULES,),
+            batch_size=1, name='inputlayer'))
+    model.add(Dense(56, activation='relu', name='hiddenlayer'))
+    model.add(Dense(1, activation='relu', name='outputlayer'))
+    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
 
-model = Sequential()
-model.add(Dense(56*NUM_RULES, input_shape=(56*NUM_RULES,),
-          batch_size=1, name='inputlayer'))
-model.add(Dense(56, activation='relu', name='hiddenlayer'))
-model.add(Dense(1, activation='relu', name='outputlayer'))
-model.compile(loss='mse', optimizer='adam', metrics=['mae'])
 # model.summary()
 average_reward = 0
 beta = 0.1
@@ -118,6 +122,7 @@ try:
         S = S_prime
         A = A_prime
 except KeyboardInterrupt:
+    model.save('ann')
     print("Exiting the RL...\n")
     print("FINAL REPORT:")
     print(f'Number of States Visited: {len(visited_states)}')
