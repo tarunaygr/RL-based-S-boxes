@@ -201,13 +201,3 @@ def state_crypto_strength(rules_index, to_print):
 
     return reward, DU, NL
 
-# Function to calculate the immediate reward for a particular state transition.
-# Parameters:
-# rule1 - the initial state of the s-box
-# rule2 - the final state of the s-box
-# Returns:
-# The immediate reward achieved by the transition
-
-
-def state_transition_reward(rule1, rule2):
-    return state_crypto_strength(rule2) - state_crypto_strength(rule1)

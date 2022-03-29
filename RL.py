@@ -30,6 +30,9 @@ def convert_8(state):
 
 
 rules_list, rule_names = m3.return_rules()
+
+#Creating the function approximator
+
 if NUM_RULES==3:
     try:
         model=keras.models.load_model('ann3')
@@ -53,7 +56,9 @@ elif NUM_RULES==2:
         model.add(Dense(1, activation='relu', name='outputlayer'))
         model.compile(loss='mse', optimizer='adam', metrics=['mae'])
 
-# model.summary()
+
+#Reinforcement Learning
+
 average_reward = 0
 beta = 0.1
 epsilon_threshold = 0.4
@@ -64,11 +69,8 @@ best_DU = -inf
 best_NL = -inf
 best_states = []
 visited_states = []
-# rules=[m3.rule_178,m3.rule_92,m3.rule_154,m3.rule_18,m3.rule_68,m3.rule_172,m3.rule_222,m3.rule_46]
 S = [29, 53]
 A_val = randint(0, 55)
-# while(A_val in S):
-#     A_val=randint(0,55)
 A = (randint(0, NUM_RULES-1), A_val)
 print(f'Initial State: {[rule_names[s] for s in S]}')
 try:
