@@ -1,10 +1,11 @@
 import sys
 file=sys.argv[1]
+file_name=file.split('.')[0]
 with open(file,'r') as fin:
     
     lines=fin.readlines()
 
-with open('funcs_'+file+'.py','w') as fout:
+with open('funcs_'+file_name+'.py','w') as fout:
     fout.write('rules=[]\n')
     fout.write('names=[]\n')
     for line in lines:
@@ -13,7 +14,7 @@ with open('funcs_'+file+'.py','w') as fout:
             
             fout.write(f'def rule_{number}(ip):\n\treturn (')
             eqn=line.split('=')[1].split('N')[0][1:-1].replace(' ','')
-            print(eqn)
+            # print(eqn)
             monomials=eqn.split('+')
             for j,m in enumerate(monomials):
                 m=m.split('x')[1:]
@@ -41,5 +42,6 @@ with open('funcs_'+file+'.py','w') as fout:
             fout.write(')\n\n')
             fout.write(f'rules.append(rule_{number})\n')
             fout.write(f'names.append("rule_{number}")\n')
+    fout.write(f'\ndef return_rules():\n\treturn rules,names')
             
 

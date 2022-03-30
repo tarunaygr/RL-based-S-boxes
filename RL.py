@@ -4,8 +4,6 @@ import keras
 import numpy as np
 import Auxiliary.funcs_filtered_outputs_m_3 as m3
 from cmath import inf
-from cv2 import threshold
-from sympy import false
 import Auxiliary.s_box as sbox
 import os
 from random import random, randint, choice
@@ -15,14 +13,19 @@ NUM_RULES = 2
 INPUT_SIZE = 8
 OUTPUT_SIZE = 8
 
-
+#   This function converts the integer list representation to a version that can be given as input to the ANN
+#   Parameters:
+#     state: The list of function index in the list rules_list. Values range from 0-55.
+    
 def convert(state):
     converted = np.zeros((NUM_RULES*56), dtype=np.int8)
     for i, j in enumerate(state):
         converted[i*56+j] = 1
     return converted
 
-
+#This function does the inverse of convert(). It converts the ANN input to a form easily understandable.
+#   Parameters:
+#     state: Input to the ANN.
 def convert_8(state):
     r = np.where(state == 1)[0]
     res = [s % 56 for s in r]
@@ -31,7 +34,7 @@ def convert_8(state):
 
 rules_list, rule_names = m3.return_rules()
 
-#Creating the function approximator
+#Creating the function approximator (ANN)
 
 if NUM_RULES==3:
     try:
@@ -69,7 +72,7 @@ best_DU = -inf
 best_NL = -inf
 best_states = []
 visited_states = []
-S = [29, 53]
+S = [29, 53] #These values indicate the function index in the list rules_list. Values range from 0-55.
 A_val = randint(0, 55)
 A = (randint(0, NUM_RULES-1), A_val)
 print(f'Initial State: {[rule_names[s] for s in S]}')
@@ -135,11 +138,16 @@ try:
         average_reward += beta*delta
         S = S_prime
         A = A_prime
+        
+        
 except KeyboardInterrupt:
+    #Save The ANN for future use
     if NUM_RULES==2:
         model.save('ann2')
     elif NUM_RULES==3:
         model.save('ann3')
+        
+        
     print("Exiting the RL...\n")
     print("FINAL REPORT:")
     print(f'Number of States Visited: {len(visited_states)}')
