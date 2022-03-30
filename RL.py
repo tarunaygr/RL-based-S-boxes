@@ -141,7 +141,7 @@ try:
         
         
 except KeyboardInterrupt:
-    #Save The ANN for future use
+    #Save The ANN for future
     if NUM_RULES==2:
         model.save('ann2')
     elif NUM_RULES==3:
