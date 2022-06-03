@@ -16,7 +16,7 @@ To run the code with different number of semi-bent functions, make the following
 - Change `NUM_RULES` in `Auxiliary/s_box.py`
 - Change initital state variable `S` in `RL.py`
 
-##Folder Structure
+## Folder Structure
 - RL.py : The main driver code which runs the Reinforcement Learning algorithm and generates the outputs.
 - Luca Codes : These are the [codes written by Luca et. al](https://github.com/rymoah/ca-boolfun-construction) for the contruction of the semi-bent functions.
 - Auxiliary : The folder contains helper codes used by `RL.py`
