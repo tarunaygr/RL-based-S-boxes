@@ -17,7 +17,7 @@ To run the code with different number of semi-bent functions, make the following
 - Change initital state variable `S` in `RL.py`
 
 ## Folder Structure
-- RL.py : The main driver code which runs the Reinforcement Learning algorithm and generates the outputs.
+- RL.py : The main driver code which runs the Reinforcement Learning algorithm and generates the outputs. The algorithm currently explores 50 new states in each run and then terminates. This values can be changed by changing the `MAX_STATES` value in the code.
 - Luca Codes : These are the [codes written by Luca et. al](https://github.com/rymoah/ca-boolfun-construction) for the contruction of the semi-bent functions.
 - Auxiliary : The folder contains helper codes used by `RL.py`
   - filtered_outputs_m_3 : List of balanced semi-bent functions of neighbourhood size 3. It is a text file
