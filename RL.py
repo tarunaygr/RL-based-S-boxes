@@ -6,12 +6,14 @@ import Auxiliary.funcs_filtered_outputs_m_3 as m3
 from cmath import inf
 import Auxiliary.s_box as sbox
 import os
-from random import random, randint, choice
+from random import random, randint
+from statistics import mean,pstdev
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 NUM_RULES = 2
 INPUT_SIZE = 8
 OUTPUT_SIZE = 8
+MAX_STATES=50
 
 #   This function converts the integer list representation to a version that can be given as input to the ANN
 #   Parameters:
@@ -72,21 +74,34 @@ best_DU = -inf
 best_NL = -inf
 best_states = []
 visited_states = []
-S = [29, 53] #These values indicate the function index in the list rules_list. Values range from 0-55.
+strengths=[]
+DUs=[]
+NLs=[]
+worst_strength = inf
+worst_DU = inf
+worst_NL = inf
+S = [4, 20] #These values indicate the function index in the list rules_list. Values range from 0-55.
 A_val = randint(0, 55)
 A = (randint(0, NUM_RULES-1), A_val)
 print(f'Initial State: {[rule_names[s] for s in S]}')
 try:
-    while True:
+    while (len(visited_states)<MAX_STATES):
 
         print(f"Replacing {rule_names[S[A[0]]]} with {rule_names[A[1]]}...")
 
         S_prime = S.copy()
         S_prime[A[0]] = A[1]
         print(f'Current State: {[rule_names[s] for s in S_prime]}')
+        R, DU, NL = sbox.state_crypto_strength(S_prime, True)
         if S_prime not in visited_states:
             visited_states.append(S_prime)
-        R, DU, NL = sbox.state_crypto_strength(S_prime, True)
+            strengths.append(R)
+            DUs.append(DU)
+            NLs.append(NL)
+        if(R < worst_strength):
+            worst_strength = R
+            worst_DU = DU
+            worst_NL = NL
         if(R > best_strength):
             best_strength = R
             best_DU = DU
@@ -139,7 +154,24 @@ try:
         S = S_prime
         A = A_prime
         
+    if NUM_RULES==2:
+        model.save('ann2')
+    elif NUM_RULES==3:
+        model.save('ann3')
         
+        
+    print("Exiting the RL...\n")
+    print("FINAL REPORT:")
+    print(f'Number of States Visited: {len(visited_states)}')
+    print(f"Best Strength: {round(best_strength,2)}")
+    print(f"Worst Strength: {round(worst_strength,2)}")
+    print(f'Best DU: {best_DU} Best NL: {best_NL}')
+    print(f'Worst DU: {worst_DU} Worst NL: {worst_NL}')
+    print(f'Average Strength of visited States: {round(mean(strengths),2)}')
+    print(f'Standard Deviation of strength: {round(pstdev(strengths),2)}')
+    print(f'Number of states with best strengths: {len(best_states)}')
+    print('Best States:')
+    print(best_states)
 except KeyboardInterrupt:
     #Save The ANN for future
     if NUM_RULES==2:
@@ -152,6 +184,11 @@ except KeyboardInterrupt:
     print("FINAL REPORT:")
     print(f'Number of States Visited: {len(visited_states)}')
     print(f"Best Strength: {round(best_strength,2)}")
+    print(f"Worst Strength: {round(worst_strength,2)}")
     print(f'Best DU: {best_DU} Best NL: {best_NL}')
+    print(f'Worst DU: {worst_DU} Worst NL: {worst_NL}')
+    print(f'Average Strength of visited States: {round(mean(strengths),2)}')
+    print(f'Standard Deviation of strength: {round(pstdev(strengths),2)}')
+    print(f'Number of states with best strengths: {len(best_states)}')
     print('Best States:')
     print(best_states)

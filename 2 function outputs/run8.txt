@@ -1,0 +1,895 @@
+Importing Model..
+Initial State: ['rule_226', 'rule_126']
+Replacing rule_126 with rule_160...
+Current State: ['rule_226', 'rule_160']
+DU = 64.0 NL=64.0
+Strength: 54.38
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 3494.5496 - mae: 59.1147
+1/1 [==============================] - 0s 433ms/step - loss: 3494.5496 - mae: 59.1147
+Replacing rule_226 with rule_34...
+Current State: ['rule_34', 'rule_160']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4629.8911 - mae: 68.0433
+1/1 [==============================] - 0s 2ms/step - loss: 4629.8911 - mae: 68.0433
+Replacing rule_160 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 580.6456 - mae: 24.0966
+1/1 [==============================] - 0s 3ms/step - loss: 580.6456 - mae: 24.0966
+Replacing rule_18 with rule_78...
+Current State: ['rule_34', 'rule_78']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6791.3384 - mae: 82.4096
+1/1 [==============================] - 0s 3ms/step - loss: 6791.3384 - mae: 82.4096
+Replacing rule_78 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 642.0381 - mae: 25.3385
+1/1 [==============================] - 0s 3ms/step - loss: 642.0381 - mae: 25.3385
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6371.0923 - mae: 79.8191
+1/1 [==============================] - 0s 3ms/step - loss: 6371.0923 - mae: 79.8191
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 424.6967 - mae: 20.6082
+1/1 [==============================] - 0s 3ms/step - loss: 424.6967 - mae: 20.6082
+Replacing rule_34 with rule_166...
+Current State: ['rule_166', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 590.7490 - mae: 24.3053
+1/1 [==============================] - 0s 3ms/step - loss: 590.7490 - mae: 24.3053
+Replacing rule_166 with rule_210...
+Current State: ['rule_210', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 740.3218 - mae: 27.2089
+1/1 [==============================] - 0s 3ms/step - loss: 740.3218 - mae: 27.2089
+Replacing rule_210 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 423.6740 - mae: 20.5833
+1/1 [==============================] - 0s 3ms/step - loss: 423.6740 - mae: 20.5833
+Replacing rule_34 with rule_48...
+Current State: ['rule_48', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 729.9874 - mae: 27.0183
+1/1 [==============================] - 0s 3ms/step - loss: 729.9874 - mae: 27.0183
+Replacing rule_48 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 620.2286 - mae: 24.9044
+1/1 [==============================] - 0s 2ms/step - loss: 620.2286 - mae: 24.9044
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6329.5674 - mae: 79.5586
+1/1 [==============================] - 0s 3ms/step - loss: 6329.5674 - mae: 79.5586
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 606.8904 - mae: 24.6351
+1/1 [==============================] - 0s 3ms/step - loss: 606.8904 - mae: 24.6351
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6206.7905 - mae: 78.7832
+1/1 [==============================] - 0s 2ms/step - loss: 6206.7905 - mae: 78.7832
+Replacing rule_130 with rule_10...
+Current State: ['rule_34', 'rule_10']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 3964.3909 - mae: 62.9634
+1/1 [==============================] - 0s 2ms/step - loss: 3964.3909 - mae: 62.9634
+Replacing rule_34 with rule_178...
+Current State: ['rule_178', 'rule_10']
+DU = 64.0 NL=64.0
+Strength: 54.38
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 3032.7764 - mae: 55.0706
+1/1 [==============================] - 0s 3ms/step - loss: 3032.7764 - mae: 55.0706
+Replacing rule_10 with rule_30...
+Current State: ['rule_178', 'rule_30']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6836.8115 - mae: 82.6850
+1/1 [==============================] - 0s 3ms/step - loss: 6836.8115 - mae: 82.6850
+Replacing rule_30 with rule_222...
+Current State: ['rule_178', 'rule_222']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6695.9868 - mae: 81.8290
+1/1 [==============================] - 0s 3ms/step - loss: 6695.9868 - mae: 81.8290
+Replacing rule_222 with rule_216...
+Current State: ['rule_178', 'rule_216']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 7210.2969 - mae: 84.9135
+1/1 [==============================] - 0s 2ms/step - loss: 7210.2969 - mae: 84.9135
+Replacing rule_178 with rule_34...
+Current State: ['rule_34', 'rule_216']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6464.2964 - mae: 80.4008
+1/1 [==============================] - 0s 2ms/step - loss: 6464.2964 - mae: 80.4008
+Replacing rule_216 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 387.8933 - mae: 19.6950
+1/1 [==============================] - 0s 5ms/step - loss: 387.8933 - mae: 19.6950
+Replacing rule_18 with rule_136...
+Current State: ['rule_34', 'rule_136']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 557.4321 - mae: 23.6100
+1/1 [==============================] - 0s 3ms/step - loss: 557.4321 - mae: 23.6100
+Replacing rule_136 with rule_156...
+Current State: ['rule_34', 'rule_156']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 4101.7637 - mae: 64.0450
+1/1 [==============================] - 0s 3ms/step - loss: 4101.7637 - mae: 64.0450
+Replacing rule_156 with rule_30...
+Current State: ['rule_34', 'rule_30']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 645.7086 - mae: 25.4108
+1/1 [==============================] - 0s 3ms/step - loss: 645.7086 - mae: 25.4108
+Replacing rule_30 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 548.7858 - mae: 23.4262
+1/1 [==============================] - 0s 2ms/step - loss: 548.7858 - mae: 23.4262
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5631.6211 - mae: 75.0441
+1/1 [==============================] - 0s 3ms/step - loss: 5631.6211 - mae: 75.0441
+Replacing rule_34 with rule_114...
+Current State: ['rule_114', 'rule_130']
+DU = 32.0 NL=0.0
+Strength: 38.71
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 1730.6786 - mae: 41.6014
+1/1 [==============================] - 0s 3ms/step - loss: 1730.6786 - mae: 41.6014
+Replacing rule_114 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5802.5986 - mae: 76.1748
+1/1 [==============================] - 0s 3ms/step - loss: 5802.5986 - mae: 76.1748
+Replacing rule_34 with rule_154...
+Current State: ['rule_154', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6177.3589 - mae: 78.5962
+1/1 [==============================] - 0s 3ms/step - loss: 6177.3589 - mae: 78.5962
+Replacing rule_130 with rule_198...
+Current State: ['rule_154', 'rule_198']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4965.1812 - mae: 70.4640
+1/1 [==============================] - 0s 3ms/step - loss: 4965.1812 - mae: 70.4640
+Replacing rule_154 with rule_34...
+Current State: ['rule_34', 'rule_198']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4382.4883 - mae: 66.2004
+1/1 [==============================] - 0s 3ms/step - loss: 4382.4883 - mae: 66.2004
+Replacing rule_198 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 521.3330 - mae: 22.8327
+1/1 [==============================] - 0s 3ms/step - loss: 521.3330 - mae: 22.8327
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5652.0312 - mae: 75.1800
+1/1 [==============================] - 0s 3ms/step - loss: 5652.0312 - mae: 75.1800
+Replacing rule_34 with rule_198...
+Current State: ['rule_198', 'rule_130']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4925.9233 - mae: 70.1849
+1/1 [==============================] - 0s 3ms/step - loss: 4925.9233 - mae: 70.1849
+Replacing rule_198 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6032.2520 - mae: 77.6676
+1/1 [==============================] - 0s 2ms/step - loss: 6032.2520 - mae: 77.6676
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 390.5689 - mae: 19.7628
+1/1 [==============================] - 0s 3ms/step - loss: 390.5689 - mae: 19.7628
+Replacing rule_34 with rule_178...
+Current State: ['rule_178', 'rule_18']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6681.3560 - mae: 81.7396
+1/1 [==============================] - 0s 2ms/step - loss: 6681.3560 - mae: 81.7396
+Replacing rule_178 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 513.3651 - mae: 22.6576
+1/1 [==============================] - 0s 3ms/step - loss: 513.3651 - mae: 22.6576
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6041.1362 - mae: 77.7247
+1/1 [==============================] - 0s 2ms/step - loss: 6041.1362 - mae: 77.7247
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 381.0812 - mae: 19.5213
+1/1 [==============================] - 0s 2ms/step - loss: 381.0812 - mae: 19.5213
+Replacing rule_34 with rule_66...
+Current State: ['rule_66', 'rule_18']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6746.4028 - mae: 82.1365
+1/1 [==============================] - 0s 3ms/step - loss: 6746.4028 - mae: 82.1365
+Replacing rule_66 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 336.6589 - mae: 18.3483
+1/1 [==============================] - 0s 3ms/step - loss: 336.6589 - mae: 18.3483
+Replacing rule_18 with rule_226...
+Current State: ['rule_34', 'rule_226']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 631.0134 - mae: 25.1200
+1/1 [==============================] - 0s 4ms/step - loss: 631.0134 - mae: 25.1200
+Replacing rule_226 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 522.0015 - mae: 22.8474
+1/1 [==============================] - 0s 3ms/step - loss: 522.0015 - mae: 22.8474
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6080.8633 - mae: 77.9799
+1/1 [==============================] - 0s 3ms/step - loss: 6080.8633 - mae: 77.9799
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 519.1981 - mae: 22.7859
+1/1 [==============================] - 0s 4ms/step - loss: 519.1981 - mae: 22.7859
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6076.8467 - mae: 77.9541
+1/1 [==============================] - 0s 3ms/step - loss: 6076.8467 - mae: 77.9541
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 516.3843 - mae: 22.7241
+1/1 [==============================] - 0s 3ms/step - loss: 516.3843 - mae: 22.7241
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6071.6377 - mae: 77.9207
+1/1 [==============================] - 0s 3ms/step - loss: 6071.6377 - mae: 77.9207
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 513.5532 - mae: 22.6617
+1/1 [==============================] - 0s 3ms/step - loss: 513.5532 - mae: 22.6617
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5587.5308 - mae: 74.7498
+1/1 [==============================] - 0s 2ms/step - loss: 5587.5308 - mae: 74.7498
+Replacing rule_34 with rule_246...
+Current State: ['rule_246', 'rule_130']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4971.4634 - mae: 70.5086
+1/1 [==============================] - 0s 3ms/step - loss: 4971.4634 - mae: 70.5086
+Replacing rule_246 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6018.5171 - mae: 77.5791
+1/1 [==============================] - 0s 3ms/step - loss: 6018.5171 - mae: 77.5791
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 376.4403 - mae: 19.4021
+1/1 [==============================] - 0s 3ms/step - loss: 376.4403 - mae: 19.4021
+Replacing rule_18 with rule_54...
+Current State: ['rule_34', 'rule_54']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4437.0996 - mae: 66.6116
+1/1 [==============================] - 0s 3ms/step - loss: 4437.0996 - mae: 66.6116
+Replacing rule_54 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 373.5446 - mae: 19.3273
+1/1 [==============================] - 0s 2ms/step - loss: 373.5446 - mae: 19.3273
+Replacing rule_18 with rule_108...
+Current State: ['rule_34', 'rule_108']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4455.1284 - mae: 66.7467
+1/1 [==============================] - 0s 2ms/step - loss: 4455.1284 - mae: 66.7467
+Replacing rule_108 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 498.4743 - mae: 22.3265
+1/1 [==============================] - 0s 3ms/step - loss: 498.4743 - mae: 22.3265
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5527.2246 - mae: 74.3453
+1/1 [==============================] - 0s 3ms/step - loss: 5527.2246 - mae: 74.3453
+Replacing rule_34 with rule_252...
+Current State: ['rule_252', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 7284.3892 - mae: 85.3486
+1/1 [==============================] - 0s 2ms/step - loss: 7284.3892 - mae: 85.3486
+Replacing rule_252 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5450.1235 - mae: 73.8250
+1/1 [==============================] - 0s 3ms/step - loss: 5450.1235 - mae: 73.8250
+Replacing rule_34 with rule_222...
+Current State: ['rule_222', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6372.2104 - mae: 79.8261
+1/1 [==============================] - 0s 3ms/step - loss: 6372.2104 - mae: 79.8261
+Replacing rule_222 with rule_54...
+Current State: ['rule_54', 'rule_130']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 3710.4207 - mae: 60.9132
+1/1 [==============================] - 0s 2ms/step - loss: 3710.4207 - mae: 60.9132
+Replacing rule_130 with rule_156...
+Current State: ['rule_54', 'rule_156']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 566.1740 - mae: 23.7944
+1/1 [==============================] - 0s 3ms/step - loss: 566.1740 - mae: 23.7944
+Replacing rule_54 with rule_80...
+Current State: ['rule_80', 'rule_156']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 872.6987 - mae: 29.5415
+1/1 [==============================] - 0s 3ms/step - loss: 872.6987 - mae: 29.5415
+Replacing rule_80 with rule_34...
+Current State: ['rule_34', 'rule_156']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 3499.0432 - mae: 59.1527
+1/1 [==============================] - 0s 3ms/step - loss: 3499.0432 - mae: 59.1527
+Replacing rule_34 with rule_184...
+Current State: ['rule_184', 'rule_156']
+DU = 64.0 NL=64.0
+Strength: 54.38
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 3428.1387 - mae: 58.5503
+1/1 [==============================] - 0s 3ms/step - loss: 3428.1387 - mae: 58.5503
+Replacing rule_184 with rule_34...
+Current State: ['rule_34', 'rule_156']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 3364.8213 - mae: 58.0071
+1/1 [==============================] - 0s 3ms/step - loss: 3364.8213 - mae: 58.0071
+Replacing rule_34 with rule_108...
+Current State: ['rule_108', 'rule_156']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 885.0934 - mae: 29.7505
+1/1 [==============================] - 0s 3ms/step - loss: 885.0934 - mae: 29.7505
+Replacing rule_108 with rule_34...
+Current State: ['rule_34', 'rule_156']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 4415.7217 - mae: 66.4509
+1/1 [==============================] - 0s 3ms/step - loss: 4415.7217 - mae: 66.4509
+Replacing rule_156 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 282.6694 - mae: 16.8128
+1/1 [==============================] - 0s 2ms/step - loss: 282.6694 - mae: 16.8128
+Replacing rule_18 with rule_48...
+Current State: ['rule_34', 'rule_48']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 434.0842 - mae: 20.8347
+1/1 [==============================] - 0s 3ms/step - loss: 434.0842 - mae: 20.8347
+Replacing rule_48 with rule_120...
+Current State: ['rule_34', 'rule_120']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 361.6149 - mae: 19.0162
+1/1 [==============================] - 0s 3ms/step - loss: 361.6149 - mae: 19.0162
+Replacing rule_34 with rule_78...
+Current State: ['rule_78', 'rule_120']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 7107.3423 - mae: 84.3051
+1/1 [==============================] - 0s 4ms/step - loss: 7107.3423 - mae: 84.3051
+Replacing rule_78 with rule_34...
+Current State: ['rule_34', 'rule_120']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 654.0438 - mae: 25.5743
+1/1 [==============================] - 0s 2ms/step - loss: 654.0438 - mae: 25.5743
+Replacing rule_120 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 472.1138 - mae: 21.7282
+1/1 [==============================] - 0s 3ms/step - loss: 472.1138 - mae: 21.7282
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5345.7480 - mae: 73.1146
+1/1 [==============================] - 0s 3ms/step - loss: 5345.7480 - mae: 73.1146
+Replacing rule_34 with rule_116...
+Current State: ['rule_116', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 7322.2236 - mae: 85.5700
+1/1 [==============================] - 0s 3ms/step - loss: 7322.2236 - mae: 85.5700
+Replacing rule_116 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5865.1816 - mae: 76.5845
+1/1 [==============================] - 0s 3ms/step - loss: 5865.1816 - mae: 76.5845
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 457.5928 - mae: 21.3914
+1/1 [==============================] - 0s 2ms/step - loss: 457.5928 - mae: 21.3914
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5868.1362 - mae: 76.6038
+1/1 [==============================] - 0s 3ms/step - loss: 5868.1362 - mae: 76.6038
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 458.6431 - mae: 21.4160
+1/1 [==============================] - 0s 3ms/step - loss: 458.6431 - mae: 21.4160
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5868.0659 - mae: 76.6033
+1/1 [==============================] - 0s 3ms/step - loss: 5868.0659 - mae: 76.6033
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 205.1221 - mae: 14.3221
+1/1 [==============================] - 0s 2ms/step - loss: 205.1221 - mae: 14.3221
+Replacing rule_34 with rule_252...
+Current State: ['rule_252', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 776.1805 - mae: 27.8600
+1/1 [==============================] - 0s 3ms/step - loss: 776.1805 - mae: 27.8600
+Replacing rule_252 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 210.1597 - mae: 14.4969
+1/1 [==============================] - 0s 3ms/step - loss: 210.1597 - mae: 14.4969
+Replacing rule_34 with rule_116...
+Current State: ['rule_116', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 783.3456 - mae: 27.9883
+1/1 [==============================] - 0s 3ms/step - loss: 783.3456 - mae: 27.9883
+Replacing rule_116 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 471.2283 - mae: 21.7078
+1/1 [==============================] - 0s 2ms/step - loss: 471.2283 - mae: 21.7078
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5910.4321 - mae: 76.8793
+1/1 [==============================] - 0s 3ms/step - loss: 5910.4321 - mae: 76.8793
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 260.0294 - mae: 16.1254
+1/1 [==============================] - 0s 3ms/step - loss: 260.0294 - mae: 16.1254
+Replacing rule_18 with rule_68...
+Current State: ['rule_34', 'rule_68']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 666.3734 - mae: 25.8142
+1/1 [==============================] - 0s 2ms/step - loss: 666.3734 - mae: 25.8142
+Replacing rule_68 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 470.8190 - mae: 21.6984
+1/1 [==============================] - 0s 3ms/step - loss: 470.8190 - mae: 21.6984
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5917.9985 - mae: 76.9285
+1/1 [==============================] - 0s 3ms/step - loss: 5917.9985 - mae: 76.9285
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 464.6598 - mae: 21.5560
+1/1 [==============================] - 0s 2ms/step - loss: 464.6598 - mae: 21.5560
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5231.3931 - mae: 72.3284
+1/1 [==============================] - 0s 3ms/step - loss: 5231.3931 - mae: 72.3284
+Replacing rule_34 with rule_166...
+Current State: ['rule_166', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 7434.9150 - mae: 86.2260
+1/1 [==============================] - 0s 3ms/step - loss: 7434.9150 - mae: 86.2260
+Replacing rule_166 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5105.4707 - mae: 71.4526
+1/1 [==============================] - 0s 2ms/step - loss: 5105.4707 - mae: 71.4526
+Replacing rule_34 with rule_80...
+Current State: ['rule_80', 'rule_130']
+DU = 32.0 NL=64.0
+Strength: 67.28
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5094.6782 - mae: 71.3770
+1/1 [==============================] - 0s 3ms/step - loss: 5094.6782 - mae: 71.3770
+Replacing rule_80 with rule_34...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5437.9282 - mae: 73.7423
+1/1 [==============================] - 0s 2ms/step - loss: 5437.9282 - mae: 73.7423
+Replacing rule_130 with rule_126...
+Current State: ['rule_34', 'rule_126']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6174.1284 - mae: 78.5756
+1/1 [==============================] - 0s 2ms/step - loss: 6174.1284 - mae: 78.5756
+Replacing rule_126 with rule_246...
+Current State: ['rule_34', 'rule_246']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6151.7905 - mae: 78.4333
+1/1 [==============================] - 0s 3ms/step - loss: 6151.7905 - mae: 78.4333
+Replacing rule_246 with rule_96...
+Current State: ['rule_34', 'rule_96']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 6592.1187 - mae: 81.1919
+1/1 [==============================] - 0s 3ms/step - loss: 6592.1187 - mae: 81.1919
+Replacing rule_96 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 408.2723 - mae: 20.2057
+1/1 [==============================] - 0s 2ms/step - loss: 408.2723 - mae: 20.2057
+Replacing rule_18 with rule_130...
+Current State: ['rule_34', 'rule_130']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 5701.2778 - mae: 75.5068
+1/1 [==============================] - 0s 2ms/step - loss: 5701.2778 - mae: 75.5068
+Replacing rule_130 with rule_18...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 201.7990 - mae: 14.2056
+1/1 [==============================] - 0s 2ms/step - loss: 201.7990 - mae: 14.2056
+Replacing rule_34 with rule_142...
+Current State: ['rule_142', 'rule_18']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploiting...
+
+1/1 [==============================] - ETA: 0s - loss: 7046.7798 - mae: 83.9451
+1/1 [==============================] - 0s 3ms/step - loss: 7046.7798 - mae: 83.9451
+Replacing rule_142 with rule_34...
+Current State: ['rule_34', 'rule_18']
+DU = 64.0 NL=0.0
+Strength: 25.81
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 244.3180 - mae: 15.6307
+1/1 [==============================] - 0s 2ms/step - loss: 244.3180 - mae: 15.6307
+Replacing rule_18 with rule_172...
+Current State: ['rule_34', 'rule_172']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 5124.9268 - mae: 71.5886
+1/1 [==============================] - 0s 3ms/step - loss: 5124.9268 - mae: 71.5886
+Replacing rule_34 with rule_226...
+Current State: ['rule_226', 'rule_172']
+DU = 32.0 NL=96.0
+Strength: 81.57
+Exploring...
+
+1/1 [==============================] - ETA: 0s - loss: 6598.6792 - mae: 81.2323
+1/1 [==============================] - 0s 3ms/step - loss: 6598.6792 - mae: 81.2323
+Exiting the RL...
+
+FINAL REPORT:
+Number of States Visited: 50
+Best Strength: 81.57
+Worst Strength: 25.81
+Best DU: 32.0 Best NL: 96.0
+Worst DU: 64.0 Worst NL: 0.0
+Average Strength of visited States: 59.21
+Standard Deviation of strength: 23.64
+Number of states with best strengths: 20
+Best States:
+[['rule_34', 'rule_78'], ['rule_34', 'rule_130'], ['rule_178', 'rule_30'], ['rule_178', 'rule_222'], ['rule_178', 'rule_216'], ['rule_34', 'rule_216'], ['rule_154', 'rule_130'], ['rule_178', 'rule_18'], ['rule_66', 'rule_18'], ['rule_252', 'rule_130'], ['rule_222', 'rule_130'], ['rule_78', 'rule_120'], ['rule_116', 'rule_130'], ['rule_166', 'rule_130'], ['rule_34', 'rule_126'], ['rule_34', 'rule_246'], ['rule_34', 'rule_96'], ['rule_142', 'rule_18'], ['rule_34', 'rule_172'], ['rule_226', 'rule_172']]
